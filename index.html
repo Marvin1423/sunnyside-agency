@@ -1,130 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 </head>
+
 <body>
+
+    <main class="main section">
+      <header>
+        <img class="logo" src="./assets/images/logo.svg" alt="Logo sunnyside">
+        <nav>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contatc">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
   
-  <main class="main-section">
-    <header>
-      <img src="./assets/images/logo.svg" alt="Logo sunnyside">
-      <nav>
-        <ul>
-          <li>About</li>
-          <li>Services</li>
-          <li>Projects</li>
-          <li>Contact</li>
+      <img class="background main-background" src="./assets/images/desktop/image-header.jpg"
+        alt="An tangerine image with blue background">
+  
+      <h1>We are creatives</h1>
+      <img class="arrow" src="./assets/images/icon-arrow-down.svg" alt="Down arrow icon">
+    </main>
+  
+    <section class="about section">
+      <div class="about-item">
+        <h2>Transform your brand</h2>
+        <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through
+          compelling visuals that do most of the marketing for you.</p>
+        <a href="#">Learn more</a>
+      </div>
+  
+      <div class="about-image">
+        <img src="./assets/images/desktop/image-transform.jpg" alt="An egg image with yellow background">
+      </div>
+  
+      <div class="about-image">
+        <img src="./assets/images/desktop/image-stand-out.jpg" alt="An pink cup image with pink background">
+      </div>
+  
+      <div class="about-item">
+        <h2>Stand out to the right audience</h2>
+        <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll
+          build and extend your brand in digital places. </p>
+        <a href="#">Learn more</a>
+      </div>
+  
+      <div class="about-item center">
+        <h2>Graphic Design</h2>
+        <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential
+          client's attention.</p>
+        <img class="background" src="./assets/images/desktop/image-graphic-design.jpg" alt="An cherry image with green background">
+      </div>
+  
+      <div class="about-item center">
+        <h2>Photography</h2>
+        <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+        </p>
+        <img class="background" src="./assets/images/desktop/image-photography.jpg" alt="An orange image with blue background">
+      </div>
+    </section>
+  
+    <section class="testimonials section">
+      <h2>Client testimonials</h2>
+  
+      <div class="clients-testimonials">
+        <div class="client-testimonial">
+          <img src="./assets/images/image-emily.jpg" alt="Emily (girl with blonde hair) profile image">
+          <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+          </p>
+          <div class="client-info">
+            <span>Emily R.</span>
+            <span>Marketing Director</span>
+          </div>
+        </div>
+    
+        <div class="client-testimonial">
+          <img src="./assets/images/image-thomas.jpg" alt="Thomas (brown man with a beard) profile image">
+          <p>Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and
+            enjoyable experience.</p>
+          <div class="client-info">
+            <span>Thomas S.</span>
+            <span>Chief Operating Officer</span>
+          </div>
+        </div>
+    
+        <div class="client-testimonial">
+          <img src="./assets/images/image-jennie.jpg" alt="Jennie (woman with short hair) profile image">
+          <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <div class="client-info">
+            <span>Jennie F.</span>
+            <span>Business Owner</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="images section">
+      <img class="image" src="./assets/images/desktop/image-gallery-milkbottles.jpg"
+        alt="An image of milkbottles with a sky background">
+      <img class="image" src="./assets/images/desktop/image-gallery-orange.jpg"
+        alt="An image of an orange on a plate with a orange background">
+      <img class="image" src="./assets/images/desktop/image-gallery-cone.jpg"
+        alt="An image of an icecream cone with a blue background">
+      <img class="image" src="./assets/images/desktop/image-gallery-sugarcubes.jpg"
+        alt="An image of sugarcubes with a pink background">
+    </section>
+  
+    <footer class="site-footer section">
+      <im class="logo" src="./assets/images/logo.svg" alt="Logo Sunnyside">
+        <ul class="sections">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
         </ul>
-      </nav>
-    </header>
-
-    <h1>We are creatives</h1>
-    <img src="./assets/images/icon-arrow-down.svg" alt="Down arrow icon">
-  </main>
-
-  <section class="about-section">
-    <div class="brand-transform">
-      <h2>Transform your brand</h2>
-      <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
-      <a href="#">Learn more</a>
-      <img class="background" src="./assets/images/desktop/image-header.jpg" alt="An tangerine image with blue background">
-    </div>
-
-    <div class="image-transform">
-      <img src="./assets/images/desktop/image-transform.jpg" alt="An egg image with yellow background">
-    </div>
-
-    <div class="image-audience">
-      <img src="./assets/images/desktop/image-stand-out.jpg" alt="An pink cup image with pink background">
-    </div>
-
-    <div class="right-audience">
-      <h2>Stand out to the right audience</h2>
-      <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we'll build and extend your brand in digital places. </p>
-      <a href="#">Learn more</a>
-    </div>
-
-    <div class="graphic-design">
-      <h2>Graphic Design</h2>
-      <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential client's attention.</p>
-      <img src="./assets/images/desktop/image-graphic-design.jpg" alt="An cherry image with green background">
-    </div>
-
-    <div class="Photography">
-      <h2>Graphic Design</h2>
-      <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
-      <img src="./assets/images/desktop/image-photography.jpg" alt="An orange image with blue background">
-    </div>
-  </section>
-
-  <section class="testimonial-section">
-    <h2>Client testimonials</h2>
-
-    <div class="client-testimonial">
-      <img src="./assets/images/image-emily.jpg" alt="Emily (girl with blonde hair) profile image">
-      <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
-      <div class="client-info">
-        <span>Emily R.</span>
-        <span>Marketing Director</span>
-      </div>
-    </div>
-
-    <div class="client-testimonial">
-      <img src="./assets/images/image-thomas.jpg" alt="Thomas (brown man with a beard) profile image">
-      <p>Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.</p>
-      <div class="client-info">
-        <span>Thomas S.</span>
-        <span>Chief Operating Officer</span>
-      </div>
-    </div>
-
-    <div class="client-testimonial">
-      <img src="./assets/images/image-jennie.jpg" alt="Jennie (woman with short hair) profile image">
-      <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
-      <div class="client-info">
-        <span>Jennie F.</span>
-        <span>Business Owner</span>
-      </div>
-    </div>
-  </section>
-
-  <section class="images-section">
-    <img class="image" src="./assets/images/desktop/image-gallery-milkbottles.jpg" alt="An image of milkbottles with a sky background">
-    <img class="image" src="./assets/images/desktop/image-gallery-orange.jpg" alt="An image of an orange on a plate with a orange background">
-    <img class="image" src="./assets/images/desktop/image-gallery-cone.jpg" alt="An image of an icecream cone with a blue background">
-    <img class="image" src="./assets/images/desktop/image-gallery-sugarcubes.jpg" alt="An image of sugarcubes with a pink background">
-  </section>
-
-  <footer class="site-footer">
-    <img src="./assets/images/logo.svg" alt="Logo Sunnyside">
-    <ul class="sections">
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#projects">Projects</a></li>
-    </ul>
-
-    <address class="social-links">
-      <a class="icon" href="https://www.linkedin.com/in/arthur1423/">
-        <img src="./assets/images/icon-facebook.svg" alt="Green facebook icon">
-      </a>
-
-      <a class="icon" href="https://www.linkedin.com/in/arthur1423/">
-        <img src="./assets/images/icon-instagram.svg" alt="Green instagram icon">
-      </a>
-
-      <a class="icon" href="https://www.linkedin.com/in/arthur1423/">
-        <img src="./assets/images/icon-twitter.svg" alt="Green twitter icon">
-      </a>
-
-      <a class="icon" href="https://www.linkedin.com/in/arthur1423/">
-        <img src="./assets/images/icon-pinterest.svg" alt="Green pinterest icon">
-      </a>
-    </address>
-  </footer>
+  
+        <address class="social-links">
+          <a class="icon" href="https://www.linkedin.com/in/arthur1423/">
+            <img src="./assets/images/icon-facebook.svg" alt="Green facebook icon">
+          </a>
+  
+          <a class="icon" href="https://www.linkedin.com/in/arthur1423/">
+            <img src="./assets/images/icon-instagram.svg" alt="Green instagram icon">
+          </a>
+  
+          <a class="icon" href="https://www.linkedin.com/in/arthur1423/">
+            <img src="./assets/images/icon-twitter.svg" alt="Green twitter icon">
+          </a>
+  
+          <a class="icon" href="https://www.linkedin.com/in/arthur1423/">
+            <img src="./assets/images/icon-pinterest.svg" alt="Green pinterest icon">
+          </a>
+        </address>
+    </footer>
 </body>
+
 </html>

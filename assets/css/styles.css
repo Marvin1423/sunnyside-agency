@@ -252,6 +252,14 @@ h2 {
     gap: 100px;
 }
 
+.testimonials h1{
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: hsl(210, 4%, 67%);
+}
+
 .testimonials h1 {
     font-family: 'Fraunces', sans-serif;
     font-size: 2rem;
@@ -265,7 +273,7 @@ h2 {
     gap: 40px;
 }
 
-.client-testimonial {
+.client-testimonial{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -274,25 +282,25 @@ h2 {
     gap: 60px;
 }
 
-.client-testimonial img {
+.client-testimonial img{
     border-radius: 50%;
     max-width: 6rem;
 }
 
-.client-testimonial p {
+.client-testimonial p{
     font-size: 1.4rem;
     line-height: 1.6;
     color: hsl(213, 9%, 39%);
 }
 
-.client-testimonial .client-info {
+.client-testimonial .client-info{
     display: flex;
     flex-direction: column;
     margin-top: 40px;
     gap: 10px;
 }
 
-.client-testimonial .client-info span {
+.client-testimonial .client-info span{
     font-size: 1.5rem;
     font-weight: 900;
     font-family: 'Fraunces';

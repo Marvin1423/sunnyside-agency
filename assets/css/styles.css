@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Barlow', sans-serif;
 }
@@ -11,6 +15,7 @@ h1,h2{
     width: 100%;
     height: auto;
     margin: 0 auto;
+    transition: 0.3s;
 }
 
 .background{
@@ -129,7 +134,7 @@ h1,h2{
     left: 4px;
     width: 170px;
     border-radius: 10px;
-    height: 8px;
+    height: 7px;
     background-color: hsla(7, 99%, 70%, 0.549);
 }
 
@@ -231,3 +236,45 @@ h1,h2{
     font-size: 1.2rem;
     color: hsl(210, 4%, 67%);
 }
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: 1fr;
+    max-width: 100%;
+}
+
+.images .image{
+    width: 100%;
+}
+
+.site-footer{
+    background-color: #90D4C5;
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.site-footer .sections{
+    display: flex;
+    gap: 40px;
+}
+
+.site-footer .sections li a{
+    color: hsla(167, 40%, 24%, 0.849);
+    font-size: 1.3rem;
+}
+
+.site-footer .logo:last-of-type {
+    filter: invert(70%) sepia(80%) saturate(800%) hue-rotate(130deg) brightness(70%) grayscale(10%);
+}
+
+.site-footer .social-links{
+    display: flex;
+    gap: 40px;
+    margin-top: 60px;
+}
+

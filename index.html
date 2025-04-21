@@ -24,12 +24,21 @@
     <main class="main section">
       <header>
         <img class="logo" src="./assets/images/logo.svg" alt="Logo sunnyside">
-        <nav>
-          <ul>
+        <div id="hamburguer-button" class="hamburguer-div">
+          <button class="hamburguer"></button>
+          <ul id="menu-hamburguer" class="menu">
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contatc">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <nav>
+          <ul class="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -125,7 +134,7 @@
         alt="An image of sugarcubes with a pink background">
     </section>
   
-    <footer class="site-footer section">
+    <footer id="contact" class="site-footer section">
       <img class="logo" src="./assets/images/logo.svg" alt="Logo Sunnyside">
         <ul class="sections">
           <li><a target="_blank" href="#about">About</a></li>
@@ -151,6 +160,8 @@
           </a>
         </address>
     </footer>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

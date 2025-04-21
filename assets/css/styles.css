@@ -1,16 +1,17 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: 'Barlow', sans-serif;
 }
 
-h1,h2{
+h1,
+h2 {
     font-family: 'Fraunces', sans-serif;
 }
 
-.section{
+.section {
     max-width: 1680px;
     width: 100%;
     height: auto;
@@ -18,7 +19,7 @@ h1,h2{
     transition: 0.3s;
 }
 
-.background{
+.background {
     position: absolute;
     object-fit: cover;
     width: 100%;
@@ -26,46 +27,46 @@ h1,h2{
     z-index: -1;
 }
 
-.logo{
+.logo {
     width: 15vw;
 }
 
-.main{
+.main {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 96vh;
 }
 
-.main .main-background{
+.main .main-background {
     top: -40px;
 }
 
-.main header{
+.main header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 60px;
 }
 
-.main header nav ul{
+.menu {
     display: flex;
     gap: 20px;
 }
 
-.main header nav ul li a{
+.menu li a {
     transition: 0.3s;
     padding: 20px;
     font-size: 1.2rem;
     color: var(--light-color);
 }
 
-.main header nav ul li a:hover{
+.menu li a:hover {
     letter-spacing: 1.5px;
     color: hsl(167, 40%, 24%);
 }
 
-.main header nav ul li:last-of-type a{
+.menu li:last-of-type a {
     background-color: var(--light-color);
     color: var(--dark-color);
     text-transform: uppercase;
@@ -76,12 +77,42 @@ h1,h2{
     padding: 20px 40px;
 }
 
-.main header nav ul li:last-of-type a:hover{
+.menu li:last-of-type a:hover {
     color: var(--light-color);
     background-color: rgba(255, 255, 255, 0.286);
 }
 
-.main h1{
+.main header .hamburguer-div {
+    display: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.main header .hamburguer {
+    cursor: pointer;
+    border: none;
+    background-color: var(--light-color);
+    position: relative;
+    height: 4px;
+    width: 40px;
+}
+
+.main header .hamburguer::before,
+.main header .hamburguer::after {
+    content: '';
+    position: absolute;
+    background-color: var(--light-color);
+    top: -10px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+}
+
+.main header .hamburguer::after {
+    top: 10px;
+}
+
+.main h1 {
     color: var(--light-color);
     text-transform: uppercase;
     font-weight: 900;
@@ -91,41 +122,41 @@ h1,h2{
     letter-spacing: 10px;
 }
 
-.main .arrow{
+.main .arrow {
     position: absolute;
     transform: scale(1.2);
     left: 50%;
     top: 45%;
-    animation: upAndDown 1.5s infinite;
+    animation: upAndDown 1s ease-in-out infinite alternate;
 }
 
-@keyframes upAndDown{
-    50%{
+@keyframes upAndDown {
+    100% {
         transform: translateY(60px);
         opacity: 0.8;
     }
 }
 
-.about{
+.about {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     height: 230vh;
 }
 
-.about-image{
+.about-image {
     animation: appear 1s;
     animation-timeline: scroll();
     animation-range: cover 0% cover 40%;
 }
 
-.about-image img{
+.about-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.about-item{
+.about-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -136,23 +167,23 @@ h1,h2{
     animation-range: cover 0% cover 30%;
 }
 
-@keyframes appear{
-    0%{
+@keyframes appear {
+    0% {
         opacity: 0;
     }
 }
 
-.about-item h2{
+.about-item h2 {
     font-size: 4vw;
     font-weight: 900;
 }
 
-.about-item p{
+.about-item p {
     color: hsl(232, 10%, 55%);
     font-size: 1.5vw;
 }
 
-.about-item a{
+.about-item a {
     position: relative;
     color: var(--dark-color);
     font-family: 'Fraunces';
@@ -162,7 +193,7 @@ h1,h2{
     padding-inline: 10px;
 }
 
-.about-item a::before{
+.about-item a::before {
     content: '';
     position: absolute;
     bottom: -1px;
@@ -173,24 +204,24 @@ h1,h2{
     background-color: hsla(7, 99%, 70%, 0.549);
 }
 
-.about-item:first-of-type a::before{
+.about-item:first-of-type a::before {
     background-color: hsla(51, 100%, 49%, 0.57);
 }
 
-.about-item.center{
+.about-item.center {
     padding: 0;
     align-items: center;
     text-align: center;
 }
 
-.about-item.center h2{
+.about-item.center h2 {
     color: hsl(167, 40%, 24%);
     font-size: 2rem;
     margin-top: 50%;
 
 }
 
-.about-item.center p{
+.about-item.center p {
     color: hsl(167, 40%, 24%);
     font-size: 1.2rem;
     width: 50%;
@@ -198,21 +229,21 @@ h1,h2{
 }
 
 .about-item.center:last-child h2,
-.about-item.center:last-child p{
+.about-item.center:last-child p {
     color: hsl(198, 62%, 26%);
 }
 
-.about-item:has(.background){
+.about-item:has(.background) {
     position: relative;
 }
 
-.about-item .background{
+.about-item .background {
     top: 0;
     width: 100%;
     height: 100%;
 }
 
-.testimonials{
+.testimonials {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -221,7 +252,7 @@ h1,h2{
     gap: 100px;
 }
 
-.testimonials h1{
+.testimonials h1 {
     font-family: 'Fraunces', sans-serif;
     font-size: 2rem;
     text-transform: uppercase;
@@ -229,12 +260,12 @@ h1,h2{
     color: hsl(210, 4%, 67%);
 }
 
-.clients-testimonials{
+.clients-testimonials {
     display: flex;
     gap: 40px;
 }
 
-.client-testimonial{
+.client-testimonial {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -243,47 +274,47 @@ h1,h2{
     gap: 60px;
 }
 
-.client-testimonial img{
+.client-testimonial img {
     border-radius: 50%;
     max-width: 6rem;
 }
 
-.client-testimonial p{
+.client-testimonial p {
     font-size: 1.4rem;
     line-height: 1.6;
     color: hsl(213, 9%, 39%);
 }
 
-.client-testimonial .client-info{
+.client-testimonial .client-info {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
     gap: 10px;
 }
 
-.client-testimonial .client-info span{
+.client-testimonial .client-info span {
     font-size: 1.5rem;
     font-weight: 900;
     font-family: 'Fraunces';
 }
 
-.client-testimonial .client-info p{
+.client-testimonial .client-info p {
     font-size: 1.2rem;
     color: hsl(210, 4%, 67%);
 }
 
-.images{
+.images {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     grid-template-rows: 1fr;
     max-width: 100%;
 }
 
-.images .image{
+.images .image {
     width: 100%;
 }
 
-.site-footer{
+.site-footer {
     background-color: #90D4C5;
     padding: 120px;
     display: flex;
@@ -293,12 +324,12 @@ h1,h2{
     gap: 40px;
 }
 
-.site-footer .sections{
+.site-footer .sections {
     display: flex;
     gap: 40px;
 }
 
-.site-footer .sections li a{
+.site-footer .sections li a {
     color: hsla(167, 40%, 24%, 0.849);
     font-size: 1.3rem;
 }
@@ -307,8 +338,90 @@ h1,h2{
     filter: invert(70%) sepia(80%) saturate(800%) hue-rotate(130deg) brightness(70%) grayscale(10%);
 }
 
-.site-footer .social-links{
+.site-footer .social-links {
     display: flex;
     gap: 40px;
     margin-top: 60px;
+}
+
+@media(max-width: 950px) {
+    .logo{
+        width: 30%;
+    }
+
+    .main h1 {
+        margin-top: 15rem;
+    }
+
+    .main header{
+        z-index: 2  ;
+        width: 100%;
+        background-color: #3DBEFF;
+        position: fixed;
+    }
+
+    .main header .hamburguer-div {
+        display: block;
+        position: relative;
+        margin-right: -20px;
+    }
+
+    .main header nav {
+        display: none;
+    }
+
+    .menu {
+        transition: 0.8s;
+        background-color: var(--light-color);
+        border-radius: 20px;
+        border-top-right-radius: 0;
+        flex-direction: column;
+        position: absolute;
+        overflow: hidden;
+        padding: 0;
+        height: 0;
+        width: 280px;
+        align-items: center;
+        left: -220px;
+        top: 80px;
+        gap: 60px;
+    }
+
+    .menu.active{
+        display: flex;
+        animation: appearUpToDown 0.8s;
+        padding: 60px 0;
+        height: 390px;
+    }
+
+    .menu.active li a{
+        opacity: 1;
+    }
+
+    .menu li a {
+        opacity: 0;
+        color: var(--dark-color);
+        width: 100%;
+        padding-inline: 60px;
+    }
+
+    .menu li:last-child a {
+        background-color: #adadad38;
+    }
+    
+    .menu li:last-of-type a:hover {
+        color: var(--dark-color);   
+    }
+}
+
+@keyframes appearUpToDown{
+    0%{
+        opacity: 0;
+        height: 0;
+        padding: 0;
+    }
+
+    100%{
+        height: 390px;
+    }
 }

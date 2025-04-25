@@ -35,18 +35,23 @@ h2 {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 96vh;
+    min-height: calc(98vh - 0.1px);
+    padding-top: 120px;
 }
 
 .main .main-background {
-    top: -40px;
+    top: -20px;
 }
 
-.main header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 40px 60px;
+    z-index: 2;
+    width: 100%;
+    background-color: var(--header-color);
+    position: fixed;
 }
 
 .menu {
@@ -63,7 +68,7 @@ h2 {
 
 .menu li a:hover {
     letter-spacing: 1.5px;
-    color: hsl(167, 40%, 24%);
+    color: var(--sub-dark-color);
 }
 
 .menu li:last-of-type a {
@@ -82,33 +87,33 @@ h2 {
     background-color: rgba(255, 255, 255, 0.286);
 }
 
-.main header .hamburguer-div {
+header .hamburguer-div {
     display: none;
     padding: 20px;
     cursor: pointer;
 }
 
-.main header .hamburguer {
+header .hamburguer {
     cursor: pointer;
     border: none;
     background-color: var(--light-color);
     position: relative;
-    height: 4px;
+    height: 3px;
     width: 40px;
 }
 
-.main header .hamburguer::before,
-.main header .hamburguer::after {
+header .hamburguer::before,
+header .hamburguer::after {
     content: '';
     position: absolute;
     background-color: var(--light-color);
     top: -10px;
     left: 0;
-    height: 4px;
+    height: 3px;
     width: 100%;
 }
 
-.main header .hamburguer::after {
+header .hamburguer::after {
     top: 10px;
 }
 
@@ -118,7 +123,7 @@ h2 {
     font-weight: 900;
     align-self: center;
     margin-top: 5rem;
-    font-size: 4vw;
+    font-size: 5vw;
     letter-spacing: 10px;
 }
 
@@ -141,7 +146,7 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(3, 1fr);
-    height: 230vh;
+    min-height: 230vh;
 }
 
 .about-image {
@@ -161,7 +166,7 @@ h2 {
     flex-direction: column;
     justify-content: center;
     gap: 40px;
-    padding: 0 100px;
+    padding: 0 80px;
     animation: appear 1s;
     animation-timeline: scroll();
     animation-range: cover 0% cover 30%;
@@ -174,16 +179,17 @@ h2 {
 }
 
 .about-item h2 {
-    font-size: 4vw;
+    font-size: calc(2rem + 3vw);
     font-weight: 900;
 }
 
 .about-item p {
-    color: hsl(232, 10%, 55%);
+    color: var(--sub-text-color);
     font-size: 1.5vw;
 }
 
 .about-item a {
+    max-width: fit-content;
     position: relative;
     color: var(--dark-color);
     font-family: 'Fraunces';
@@ -197,15 +203,17 @@ h2 {
     content: '';
     position: absolute;
     bottom: -1px;
-    left: 4px;
-    width: 170px;
+    left: 0;
+    width: 100%;
     border-radius: 10px;
     height: 8px;
-    background-color: hsla(7, 99%, 70%, 0.549);
+    background-color: var(--primary-accent-color);
+    opacity: 0.4;
 }
 
 .about-item:first-of-type a::before {
-    background-color: hsla(51, 100%, 49%, 0.57);
+    background-color: var(--secondary-accent-color);
+    opacity: 0.4;
 }
 
 .about-item.center {
@@ -215,14 +223,14 @@ h2 {
 }
 
 .about-item.center h2 {
-    color: hsl(167, 40%, 24%);
+    color: var(--sub-dark-color);
     font-size: 2rem;
     margin-top: 50%;
 
 }
 
 .about-item.center p {
-    color: hsl(167, 40%, 24%);
+    color: var(--sub-dark-color);
     font-size: 1.2rem;
     width: 50%;
     line-height: 1.6;
@@ -248,16 +256,8 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 160px;
+    padding: 160px 20px;
     gap: 100px;
-}
-
-.testimonials h1{
-    font-family: 'Fraunces', sans-serif;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    color: hsl(210, 4%, 67%);
 }
 
 .testimonials h1 {
@@ -265,15 +265,18 @@ h2 {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 5px;
-    color: hsl(210, 4%, 67%);
+    color: var(--sub-text-color);
+    opacity: 0.8;
 }
 
 .clients-testimonials {
     display: flex;
-    gap: 40px;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
 }
 
-.client-testimonial{
+.client-testimonial {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -282,25 +285,25 @@ h2 {
     gap: 60px;
 }
 
-.client-testimonial img{
+.client-testimonial img {
     border-radius: 50%;
     max-width: 6rem;
 }
 
-.client-testimonial p{
+.client-testimonial p {
     font-size: 1.4rem;
     line-height: 1.6;
     color: hsl(213, 9%, 39%);
 }
 
-.client-testimonial .client-info{
+.client-testimonial .client-info {
     display: flex;
     flex-direction: column;
     margin-top: 40px;
     gap: 10px;
 }
 
-.client-testimonial .client-info span{
+.client-testimonial .client-info span {
     font-size: 1.5rem;
     font-weight: 900;
     font-family: 'Fraunces';
@@ -338,8 +341,19 @@ h2 {
 }
 
 .site-footer .sections li a {
-    color: hsla(167, 40%, 24%, 0.849);
+    color: var(--sub-dark-color);
     font-size: 1.3rem;
+}
+
+.site-footer .menu li:last-of-type a {
+    background-color: transparent;
+    text-transform: initial;
+    padding: 20px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.site-footer .menu li a:hover {
+    color: var(--light-color);
 }
 
 .site-footer .logo:last-of-type {
@@ -348,88 +362,31 @@ h2 {
 
 .site-footer .social-links {
     display: flex;
-    gap: 40px;
     margin-top: 60px;
+    gap: 20px;
 }
 
-@media(max-width: 950px) {
-    .logo{
-        width: 30%;
-    }
-
-    .main h1 {
-        margin-top: 15rem;
-    }
-
-    .main header{
-        z-index: 2  ;
-        width: 100%;
-        background-color: #3DBEFF;
-        position: fixed;
-    }
-
-    .main header .hamburguer-div {
-        display: block;
-        position: relative;
-        margin-right: -20px;
-    }
-
-    .main header nav {
-        display: none;
-    }
-
-    .menu {
-        transition: 0.8s;
-        background-color: var(--light-color);
-        border-radius: 20px;
-        border-top-right-radius: 0;
-        flex-direction: column;
-        position: absolute;
-        overflow: hidden;
-        padding: 0;
-        height: 0;
-        width: 280px;
-        align-items: center;
-        left: -220px;
-        top: 80px;
-        gap: 60px;
-    }
-
-    .menu.active{
-        display: flex;
-        animation: appearUpToDown 0.8s;
-        padding: 60px 0;
-        height: 390px;
-    }
-
-    .menu.active li a{
-        opacity: 1;
-    }
-
-    .menu li a {
-        opacity: 0;
-        color: var(--dark-color);
-        width: 100%;
-        padding-inline: 60px;
-    }
-
-    .menu li:last-child a {
-        background-color: #adadad38;
-    }
-    
-    .menu li:last-of-type a:hover {
-        color: var(--dark-color);   
-    }
+.site-footer .social-links a {
+    padding: 0 20px;
 }
 
-@keyframes appearUpToDown{
-    0%{
+.site-footer .social-links a img {
+    transition: 0.2s;
+}
+
+.site-footer .social-links a:hover img {
+    filter: brightness(250%) sepia(100%);
+    transform: scale(1.2);
+}
+
+@keyframes appearUpToDown {
+    0% {
         opacity: 0;
         height: 0;
         padding: 0;
     }
 
-    100%{
+    100% {
         height: 390px;
     }
 }

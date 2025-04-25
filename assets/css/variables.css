@@ -1,10 +1,11 @@
 :root{
-    --primary-color: hsl(7, 99%, 70%);
-    --secondary-color: hsl(51, 100%, 49%);
-    --accent-color: hsl(167, 40%, 24%);
     --dark-color: #000000;
     --light-color: hsl(210, 36%, 96%);
-    --text-color: hsl(192, 15%, 20%);
-    --heading-color: hsl(232, 10%, 15%);
-    --border-color: hsl(0, 0%, 80%);
+    --header-color: #3DBEFF;
+    --sub-dark-color: hsl(167, 40%, 24%);
+
+    --sub-text-color: hsl(232, 10%, 55%);
+    --primary-accent-color: hsl(7, 99%, 70%);
+
+    --secondary-accent-color: hsl(51, 100%, 49%);
 }

@@ -1,5 +1,4 @@
 # 🚀 Sunnyside Agency
-![banner](./assets/images/sunnyside-banner.png)
 
 <h2>🔗 Page link</h2>
 <p>Link for visualization and testing of the page: 👉 <a href="https://github-user-api-mu.vercel.app/" target="_blank">Sunnyside Agency</a></p>

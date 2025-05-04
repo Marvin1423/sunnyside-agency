@@ -1,7 +1,7 @@
 # 🚀 Sunnyside Agency
 
 <h2>🔗 Page link</h2>
-<p>Link for visualization and testing of the page: 👉 <a href="https://github-user-api-mu.vercel.app/" target="_blank">Sunnyside Agency</a></p>
+<p>Link for visualization and testing of the page: 👉 <a href="https://marvin1423.github.io/sunnyside-agency/" target="_blank">Sunnyside Agency</a></p>
 
 ![last-design](./assets/videos/complete-project.gif)
 
